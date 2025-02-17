@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+        
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #dbd9d93d;
+    text-align: center;
+ }
+ .subtitle{
+    color: white;
+ }
+        
+.email-wrapper {
+    width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logo {
+
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.responsive-image{
+    width: 350px;
+}
+
+
+.banner {
+    text-align: center;
+    background: url('https://www.xfilespro.com/email-images/Newsletter-banner.png') center/cover;
+    padding: 60px 20px;
+    color: white;
+    height: 200px;
+}
+
+.banner h1 {
+    font-size: 28px;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card1 h2 {
+    margin: 15px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.card1 p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ee2843;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .card {
+            width: 320px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card h3 {
+            background: #191919;
+            color: #fff;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .card .info {
+            padding: 15px;
+        }
+        .info div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .info div:last-child {
+            border-bottom: none;
+        }
+        .date{
+          color: #ee2843;
+        }
+
+        .new-customers {
+            background: url('https://www.xfilespro.com/email-images/Newsletter-banner-black.png') no-repeat center top;
+            background-color: #fffffe;
+            text-align: center;
+            padding: 50px 0;
+            color: #ffffff;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .new-customers h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .new-customers p {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .new-customers img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 700px;
+        }
+
+        .reviews {
+            text-align: center;
+            padding: 50px 0;
+            color: #191919;
+        }
+        .reviews h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+            color: #ee2843;
+        }
+        .reviews p {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        .reviews img {
+            width: 645px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-scale {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+
+}
+.hover-scale {
+    background: url('background.jpg') no-repeat center center/cover;
+}
+.hover-scale h2 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.profile-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #ee2843;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #666;
+}
+.section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ee2843;
+    margin-top: 50px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.layout {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.section h2 {
+    font-size: 30px;
+    color: #ee2843;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.event-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+
+.event-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #191919;
+}
+
+.event-info p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+.hiring-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.job-list {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    width: 450px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+
+.job-role {
+    color: #191919;
+    font-weight: bold;
+}
+
+.job-count {
+    background: #ee2843;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.New {
+    font-size: 30px;
+    color: #ee2843;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.social-container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 15px;
+
+   
+}
+
+.icon img {
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+
+.icon-space {
+    width: 10px;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 15px;
+    border-top: 1px solid #000;
+}
+
+.twin{
+    color: white;
+}
+</style>
+<body>
+  <div class="newsletter-container">
+    
+    <!-- Banner Section -->
+    <div class="email-wrapper">
+        <div class="email-header">
+            <img src="https://www.xfilespro.com/email-images/Newsletter-xfp-logo.png" alt="Company Logo" class="logo">
+        </div>
+        <div class="banner">
+            <img src="https://www.xfilespro.com/email-images/xpress-bulletin-text.png" 
+                 alt="Xfilespro Labs" class="responsive-image">
+            <p class="subtitle">February 2025 Edition</p>
+        </div>
+        <div class="content">
+            <div class="card1">
+                <img src="https://xfilespro.com/email-images/XFP-New-Beginning.jpg" alt="Feature Image" class="feature-image">
+                <h2 class="New">New Beginnings!</h2>
+                <p>Welcome to our February newsletter! Get the latest updates,  and exclusive content right here.</p>
+                <a href="#followus" class="btn">Follow Us!</a>
+            </div>
+        </div>
+
+
+   <!-- Birthday & Anniversary -->
+   <div class="container">
+    <div class="card">
+        <img src="https://www.xfilespro.com/email-images/Birthday.png" alt="Birthday">
+        <h3>Upcoming Birthdays</h3>
+        <div class="info">
+            <div><span>Yashashwini S</span><span class="date">08th Feb</span></div>
+            <div><span>Tejaswini Reddy K</span><span class="date">15th Feb</span></div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="https://www.xfilespro.com/email-images/Anniversary.png" alt="Anniversary">
+        <h3>Upcoming Anniversaries</h3>
+        <div class="info">
+            <div><span>Sasi Kumar R</span><span class="date">05th Feb</span></div>
+            <div><span>Samarth K</span><span class="date">07th Feb</span></div>
+            <div><span>Devanathan Senguttuvan</span><span class="date">13th Feb</span></div>
+            <div><span>Imran Pasha G N</span><span class="date">27th Feb</span></div>
+        </div>
+    </div>
+
+    <!-- Upcoming event -->
+<div class="layout">
+    <div class="section events">
+        <h2 class="New">Upcoming Events</h2>
+        <p class="section-description">Stay updated with our latest events. Don’t miss out!</p>
+        <div class="event-box">
+            <div class="event-card">
+                <img src="https://xfilespro.com/email-images/AIKAYAM.webp" alt="AIKYAM Event">
+                <div class="event-info">
+                    <h3>AIKYAM</h3>
+                    <p>15th Feb</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="https://xfilespro.com/email-images/birthday-celebration.jpeg" alt="Birthday Celebration">
+                <div class="event-info">
+                    <h3>Birthday & Anniversary</h3>
+                    <p>3rd Feb</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Customer -->
+<div class="new-customers">
+  <h2 >New Customers</h2>
+  <p class="subtitle">Welcoming Our Newest Customers Empowering Document & Data Management with XfilesPro!</p>
+  <img src="https://xfilespro.com/email-images/Customers-Jan.png" alt="XfilesPro Labs">
+  </div>
+
+   <!-- Reviews -->
+   <div class="reviews">
+    <h2 class="New">Reviews</h2>
+    <p>Customer Voices: See What Our Clients Are Saying About Us!</p>
+    <div class="review-cards">
+        <div class="review-card">
+            <img src="https://xfilespro.com/email-images/Jan-testimonial.png" alt="Customer Testimonial">
+        </div>
+        <div class="review-card">
+            <img src="https://xfilespro.com/email-images/Jan-testimonial1.png" alt="Customer Testimonial">
+        </div>
+    </div>
+</div>
+
+    <!-- New Team Member -->
+    <div class="hover-scale">
+        <h2 class="New">New Team Member</h2>
+        <div class="profile-wrapper">
+            <div class="profile-image">
+                <img src="https://xfilespro.com/email-images/S-Chandra.jpg" alt="S Chandra Sekhar">
+            </div>
+            <h3 class="twin">S Chandra Sekhar</h3>
+            <p class="twin">Welcome to the XfilesPro Family!</p>
+        </div>
+    </div>
+  
+
+
+<!-- Hiring Section -->
+<div class="hiring-box">
+    <h2 class="New">We're Hiring!</h2>
+
+    <div class="job-list">
+        <div class="job-item">
+            <span class="job-role">Enterprise Sales</span>
+            <span class="job-count">3 Positions</span>
+        </div>
+        <div class="job-item">
+            <span class="job-role">UI/UX Web Developer</span>
+            <span class="job-count">1 Position</span>
+        </div>
+    </div>
+</div>
+
+<!-- Follow us  -->
+<div class="social-container" >
+    <div class="social-icons" id="followus">
+        <div class="icon">
+            <a href="https://www.facebook.com/xfilespro">
+                <img src="https://www.xfilespro.com/email-images/fb-icon.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="icon-space"></div>
+        <div class="icon">
+            <a href="https://x.com/xfiles_pro">
+                <img src="https://www.xfilespro.com/email-images/x-icon.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="icon-space"></div>
+        <div class="icon">
+            <a href="https://www.instagram.com/xfiles_pro/">
+                <img src="https://www.xfilespro.com/email-images/insta-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © 2025 XfilesPro Labs Pvt. Ltd. All Rights Reserved
+    </div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
